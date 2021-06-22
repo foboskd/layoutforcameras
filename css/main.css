@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:roboto-regular;
+    src:url("../media/fonts/Roboto-Regular.woff");
+}
+
+html{
+    font-size:100%;
+}
+
+body{
+    padding:0;
+    margin:0;
+    font-family: roboto-regular;
+}
+
+.add-button-wrapper{
+    position:fixed;
+    bottom:5%;
+    right:5%;
+}
+
+.header-wrapper{
+    background-color:rgb(92, 92, 92);
+}
+
+.header-nav-wrapper{
+    max-width:70rem;
+    margin:0 auto;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.header-main-menu{
+    max-width:48rem;
+    padding:0;
+    display:flex;
+    justify-content: space-around;
+    list-style:none;
+}
+
+.header-main-menu li{
+    margin-right:2rem;
+}
+
+.header-main-menu li:last-child{
+    margin-right:0rem;
+}
+
+.header-main-menu a {
+    color:#fff;
+    text-decoration:none;
+
+}
+
+.filters-wrapper{
+    max-width:69rem;
+    margin:0 auto;
+    margin-top:2rem;
+    padding:.35rem .5rem;
+    border:1px solid grey;
+    display:flex;
+    justify-content: flex-start;
+    overflow:scroll;
+}
+
+.filters-menu{
+    width:100%;
+    list-style: none;
+    padding:0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filters-menu li{
+    margin-right: 1rem;
+}
+
+.search{
+    width:17rem;
+}
+
+.table-wrapper{
+    margin:0 auto;
+    max-width:70rem;
+    margin-top:2rem;
+    overflow: scroll;
+}
+
+.header-table{
+    width:70rem;
+    display:grid;
+    grid-template-columns: 34rem 18rem 18rem;
+    grid-template-rows: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(146, 146, 146);
+    border-bottom:1px solid rgba(49, 49, 49, 0.6);
+    color:#fff;
+}
+
+.header-table > div{
+    text-align:center
+}
+
+.row-table{
+    width:70rem;
+    display:grid;
+    grid-template-columns: 34rem 18rem 18rem;
+    padding:.5rem 0;
+    justify-content: space-between;
+    border-bottom:1px solid rgba(179, 179, 179, 0.26);
+}
+
+.row-table:nth-child(2n+1){
+    background-color:rgba(163, 163, 163, 0.075);
+}
+
+.row-address{
+    font-size:.85rem;
+}
+
+.row-moning-foto,
+.row-evening-foto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-moning-foto:hover,
+.row-evening-foto:hover{
+    background-color: rgba(169, 169, 169, 0.18);
+}
+
+.row-moning-foto a img,
+.row-evening-foto a img{
+    max-width:10rem;
+}
+
+
